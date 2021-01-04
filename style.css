@@ -1,0 +1,380 @@
+html{
+  background-image:linear-gradient(#FC5E55,#FA4083);
+}
+
+body{
+  background-image:url(Images/image-lion-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-size: 0.875em;
+}
+
+.container{
+  width:1024px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+
+
+.logo{
+  flex: 2;
+}
+
+nav{
+  text-align: right;
+  flex: 1; 
+}
+
+.nav a{
+  color:white;
+  text-decoration:none;
+  
+}
+
+.navbutton {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  padding-right: 10px;
+  width:70px;
+  height: 25px;
+}
+
+/* This turns the drop down off when not used */
+.dropdown-box {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  padding-top: 20px;
+  margin-left: -30px;
+}
+
+
+/* This class turns the dropdown menu on during hover */
+.navbutton:hover .dropdown-box {
+  display: block;
+}
+
+.dropdown-box .navbutton:hover {
+  transition-duration: 1s;
+  background-color: #333333;
+  border-radius: 50px;
+}
+
+.dropdown-box .navbutton{
+  width:150px;
+  padding-top: 5%;
+}
+
+main{
+  padding-top: 50px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: down;
+}
+
+.main2{
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+.aboutus{
+  min-height: 400px;
+  padding-top: 50px;
+}
+
+.products{
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+.service{
+  min-height: 300px;
+  padding-top: 50px;
+}
+
+.delivery{
+  min-height: 200px;
+  padding-top: 50px;
+}
+
+h1{
+  font-size: 3.125rem;
+  margin-bottom: 1rem;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+h2{
+  font-size: 2rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+
+p{
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards p{
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  margin: 10px ;
+}
+
+.cards i{
+  font-size: 100px;
+  padding-top: 12%;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card1{
+  background-image: url(Images/image-background-card1.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.card2{
+  background-image: url(Images/image-background-card2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.card3{
+  background-image: url(Images/image-background-card3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.card1, .card2, .card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+.herobox1{
+  flex: 2;
+  padding-right: 100px;
+}
+
+.herobox2{
+  flex: 1;
+}
+
+/* rounded corners: border radius */
+.mybutton{
+  background-color: white;
+  color: #FC5E55;
+  padding:11px 25px ;
+  border-radius: 50px; 
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+.mybutton:hover{
+  background-color: #333333;
+  transition-duration: 1s;
+}
+
+a.mybutton{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.testimonials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+
+.tbox{
+  width: 47%;
+  padding: 50px;
+  border:1px solid white;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.tbox p:last-of-type{
+  font-size: 0.8rem;
+  padding-left: 20px;
+}
+
+.inputwrapper{
+  margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea{
+  padding: 10px 10px;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-size: 0.70rem;
+  box-sizing: border-box;
+}
+
+.newline{
+  display:block;
+  margin-bottom: 10px;
+}
+
+/* adding space in between phone and email */
+.margin-right-a{
+  margin-right: 20px;
+}
+
+/* adding space in between radio button and label text */
+input[type=radio]{
+  margin-right: 3px;
+}
+
+form{
+  margin:40px 0px;
+ 
+}
+
+.product-options p{
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  margin: 10px ;
+}
+
+.product-options i{
+  font-size: 100px;
+  padding-top: 12%;
+}
+
+.product-options{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.product1{
+  background-image: url(Images/onsiteservices.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.product2{
+  background-image: url(Images/requestcallbacks.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.product3{
+  background-image: url(Images/partsdelivery.jpg);
+  background-size: cover;
+  background-position: bottom;
+  min-height: 250px;
+  width: 30%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+}
+
+.product1, .product2, .product3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
+}
+
+
+.service-options {
+margin-bottom: 100px;
+}
+
+.service-options p{
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  margin: 8px 50px 10px 45px;
+}
+
+.service-options h2{
+ text-align: left;
+}
+
+.delivery-parts{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.delivery-part {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.part-image-circle {
+  background-size: 30px;
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.404);
+  border-radius: 100%;
+  align-content: center;
+}
+
+.image1{
+  background-image: url(Images/wheels-tires-01.jpg);
+}
+
+.image2{
+  background-image: url(Images/chains-02.jpg);
+}
+
+.image3{
+  background-image: url(Images/gears-shifting-03.jpg);
+}
+
+.image4{
+  background-image: url(Images/brakes-04.jpg);
+}
+
+.image5{
+  background-image: url(Images/pedals-05.jpg);
+}
+
+.image6{
+  background-image: url(Images/handlebars-06.jpg);
+}
+
